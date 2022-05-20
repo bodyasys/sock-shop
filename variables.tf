@@ -1,14 +1,14 @@
 variable "aws_region" {
-    default = "us-east-1"
+  default = "us-east-1"
 }
 variable "cidr_block" {
-    default = "10.0"
+  default = "10.0"
 }
 variable "project_name" {
-    default = "test"
+  default = "test"
 }
 variable "tag_environment" {
-    default = "infra"
+  default = "infra"
 }
 
 variable "iam_user_name" {

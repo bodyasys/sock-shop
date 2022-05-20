@@ -26,12 +26,9 @@ variable "helm_timeout" {
   description = "Default Helm Release timeout"
 }
 
-#variable "route53_zone_id" {}
-
-#variable "route53_zone_name" {}
 
 variable "iam_user_name" {
-  default = "bvvovkservice@gmail.com"
+  default     = "bvvovkservice@gmail.com"
   type        = string
   description = "Your IAM user"
 }

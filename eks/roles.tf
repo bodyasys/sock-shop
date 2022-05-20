@@ -3,7 +3,7 @@ resource "aws_iam_policy" "alb_ingress_policy" {
   name_prefix = "AWSLoadBalancerController"
   description = "EKS ALB ingress controller policy for cluster ${module.eks.cluster_id}"
   policy      = file("./eks/files/alb_ingress_policy.json")
-  
+
   depends_on = [module.eks]
 }
 

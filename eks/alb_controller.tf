@@ -1,7 +1,7 @@
 locals {
   iam_role        = "aws-load-balancer-controller"
   namespace       = "kube-system"
-  service_account = "alb-ingress"
+  service_account = "aws-load-balancer-controller"
 }
 
 resource "kubectl_manifest" "alb_crds" {
@@ -23,6 +23,7 @@ resource "helm_release" "alb_ingress" {
   values = [<<EOF
 clusterName: ${local.cluster_name}
 region: ${var.aws_region}
+replicaCount: 1
 serviceAccount:
   create: true
   name: ${local.service_account}

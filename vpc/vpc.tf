@@ -1,6 +1,6 @@
 data "aws_availability_zones" "this" {}
 locals {
-  cluster_name = "test"
+  cluster_name = "${var.project_name}-${var.tag_environment}-eks-cluster"
 
   tags = {
     Name        = "${var.project_name}-${var.tag_environment}-vpc"
@@ -24,7 +24,7 @@ module "vpc" {
 
   enable_dns_hostnames = true
   enable_nat_gateway   = true
-  single_nat_gateway = true
+  single_nat_gateway   = true
 
   enable_flow_log                      = true
   create_flow_log_cloudwatch_iam_role  = true
