@@ -2,6 +2,7 @@ In this project we used a socks-shop (https://github.com/microservices-demo/micr
 1) frontend
 2) backend
 3) database
+
 Deployment is provisioned out with the help of Terraform with the creation of the EKS cluster with cluster-autoscaling, alb ingress controller and the deployment of the helm chart with other components
 For install that project we need:
 1) Configure awscli or use `export` env's (environments are example)
