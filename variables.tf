@@ -10,12 +10,9 @@ variable "project_name" {
 variable "tag_environment" {
     default = "infra"
 }
-#variable "route53_zone_id" {}
-#variable "route53_zone_name" {}
-#variable "single_nat_gateway" {}
 
 variable "iam_user_name" {
-  default     = ""
+  default     = "bvvovkservice@gmail.com"
   type        = string
   description = "Your IAM user"
 }

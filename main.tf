@@ -21,6 +21,5 @@ module "eks" {
 module "shop" {
   source     = "./shop"
   cluster_id = module.eks.cluster_id
-  # cert_arn   = module.cert.arn
-  # domain_name = "link" #var.route53_zone_name
+
 }

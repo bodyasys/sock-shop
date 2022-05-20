@@ -1,4 +1,0 @@
-dependencies:
-  - name: nginx-ingress
-    version: 0.13.1
-    repository: https://helm.nginx.com/stable
