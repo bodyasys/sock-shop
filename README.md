@@ -9,4 +9,5 @@ For install that project we need:
 ```        
 2) input variable iam_user_name in `./variable.tf`
 3) `terraform init`
-4) `terraform apply`
+4) `terraform plan`
+5) `terraform apply`
